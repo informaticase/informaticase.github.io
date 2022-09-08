@@ -3,9 +3,15 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f13b;
   }
   
+
+#p1 {
+    color:aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
   li a {
     display: block;
     color: #000;
