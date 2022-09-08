@@ -9,10 +9,12 @@ ul {
 
 #p1 {
     color:aqua;
+    background-color: beige;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
-  li a {
+  
+li a {
     display: block;
     color: #000;
     padding: 8px 16px;
