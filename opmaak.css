@@ -17,7 +17,20 @@ ul {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
-  
+ 
+
+#p1 {
+  color:rgb(255, 81, 0);
+  background-color: beige;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+}
+
+#m1 {
+    color: slateblue;
+    background-color: rgb(205, 90, 182);
+}
+
 li a {
     display: block;
     color: #000;
