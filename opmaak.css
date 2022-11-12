@@ -1,3 +1,5 @@
+
+/*bolletjes weg, marge en padding op 0*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,7 +34,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: large;
 }
-
+/*m1 is een menu van index.html*/
 #m1 {
     color: slateblue;
     background-color: rgb(205, 90, 182);
@@ -45,7 +47,7 @@ li a {
     text-decoration: none;
   }
   
-  /* Change the link color on hover */
+  /* bij hoveren verandert de kleur van de link */
   li a:hover {
     background-color: #555;
     color: white;
