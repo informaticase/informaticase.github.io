@@ -9,6 +9,12 @@ ul{
 li{
     float:left;
 }
+
+li a:hover {
+    background-color: #111;
+    color: purple;
+  }
+  
 li a {
     display: block;
     color: white;
@@ -16,7 +22,3 @@ li a {
     padding: 18px;
     text-decoration:none;
 }
-li a:hover {
-    background-color: #111;
-    color: purple;
-  }
