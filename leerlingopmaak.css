@@ -8,17 +8,19 @@ ul{
 }
 li{
     float:left;
+    width: 250px;
+    height: 250px;
 }
 
 li a:hover {
     background-color: #111;
     color: purple;
   }
-  
+
 li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 18px;
     text-decoration:none;
 }
