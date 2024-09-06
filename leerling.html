@@ -1,18 +1,35 @@
-<!DOCTYPE html> <!dit is de homepage van mijn website-->
-<html> <!dit is het html-element-->
+<!DOCTYPE html> <!--Dit is de homepage van mijn site-->
+<html> <!--Dit is een html-element-->
   <head>
-<link rel="stylesheet" type="text/css" href="leerlingopmaak.css">
-    <title>Mijn pagina</title>
-    <meta charset="utf-8">
+    <title>Help</title> <!--Titel in de balk bovenaan-->
+      <link rel="stylesheet" type="text/css" href="leerlingopmaak.css">  <!--Dit is de link naar mijn css bestand--> 
+      
+    <meta charset="utf-8"> <!--welke versie het is-->
   </head>
-  <body>
-    <h1>Informatica met Jayden</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    <li><a href="binairstelsel.html">Binairstelsel</a></li>
-    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-    </ul>
 
-    <img src="images.fish.jpeg" alt="Fishanator">
-  </body>
-</html>
+<body>
+    <ul class="top-level-menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="binairstelsel.html">binair stelsel</a></li>
+        <li><a href="kleurmodellen.html">kleurmodellen</a></li> <!--link naar de 3e pagina-->
+        <li><a href="compressietechnieken.html">compressietechnieken</a></li> <!--link naar de 4e pagina--> 
+        <li><a href="werking_computer.html" >Werking computer</a></li> <!--link naar de 5e pagina-->
+        <li><a href="processor.html" >processor</a></li>
+        <li> <a href="dropdown.html">dropdown</a>
+            <ul class="second-level-menu">
+             <li><a href="#">Optie 1</a></li>
+                <li><a href="#">Optie 2</a></li>
+                <li><a href="#">Optie 3</a>
+                 <ul class="third-level-menu">
+                    <li><a href="#">Optie 3.1</a></li>
+                    <li><a href="#">Optie 3.2</a></li>
+                    <li><a href="#">Optie 3.3</a></li>
+                    <li><a href="#">Optie 3.4</a></li>
+                 </ul>
+                </li>
+             <li><a href="#">Optie 4</a></li>
+            </ul>
+        </li>
+     <li><a href="#">Contact</a></li>
+    </ul>
+</body>
