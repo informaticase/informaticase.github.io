@@ -10,7 +10,7 @@ ul {
     background-color: rgb(205, 90, 182);
   }
   
-  
+/*body2 in index.html krijgt een andere tekstkleur en achtergrondkleur*/  
 #body2{
   color: rgb(179, 60, 112);
   background-color: aquamarine;
