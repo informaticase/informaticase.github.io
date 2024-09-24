@@ -1,6 +1,7 @@
-body{ 
+/*body{ 
     background: url(plaatje\ 3.jpg)
-  }
+  }*/
+  
   body{
     background-repeat: no-repeat;
     background-size:cover;
@@ -66,14 +67,10 @@ body{
       font-size: 20px 
    }
   
-  /* #maxim1 {
-    position: absolute;
-    left: 500px;
-   }*/
 
    #maxim1 {
     position: relative;
-    left: 500px;
+    left: 300px;
    }
    
    
