@@ -66,14 +66,14 @@ body{
       font-size: 20px 
    }
   
-   #maxim1 {
+  /* #maxim1 {
     position: absolute;
     left: 500px;
-   }
+   }*/
 
-   #maxim2 {
+   #maxim1 {
     position: relative;
-    left: 50%;
+    left: 500px;
    }
    
    
