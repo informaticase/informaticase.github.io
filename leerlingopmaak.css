@@ -1,7 +1,7 @@
 /*body{ 
     background: url(plaatje\ 3.jpg)
   }*/
-  
+
   body{
     background-repeat: no-repeat;
     background-size:cover;
@@ -70,6 +70,8 @@
 
    #maxim1 {
     position: relative;
+    width: 300px;
+    height: 200px;
     left: 300px;
    }
    
