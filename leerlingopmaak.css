@@ -7,9 +7,7 @@
     background-size:cover;
   }*/
 
-  body {
-    background-color: aqua;
-  }
+ 
   
     ul {
       list-style-type:none ; /*bolletjes weg*/
@@ -48,7 +46,8 @@
     }
   
     p {
-      color: white;
+      background-color: aqua;
+    color: white;
       text-align: center;
       width: 70%;
       margin:auto;
