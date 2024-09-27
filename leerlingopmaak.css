@@ -11,6 +11,15 @@
   /*margin-bottom: 20px;*/
   }
 
+  .footer{
+    background-color: #a7c268;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 0px; /*Als ik deze niet gebruik, komen er ronde hoeken net als mijn paragrafen. Maar dat wou ik niet*/
+    display: block;
+    clear:both;
+    }
 
 body {
   background-color: #ffdfba; /*Dit is de achtergrondkleur voor alle pagina's, tenzij ik specefiek een andere kleur kies voor de pagina*/
@@ -122,15 +131,7 @@ text-decoration: none;
 background-color: #a7c268;
 }
 
-.footer{
-background-color: #a7c268;
-padding: 15px;
-margin-top: 20px;
-font-size: 13px;
-border-radius: 0px; /*Als ik deze niet gebruik, komen er ronde hoeken net als mijn paragrafen. Maar dat wou ik niet*/
-display: block;
-clear:both;
-}
+
 
 #afbeeldingbinairtellen{
 width: 40%;
