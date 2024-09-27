@@ -59,7 +59,7 @@ p {
 
 #tekstkleurmodellen{
   margin-left: 20px;
-  width: 80%;
+  width: 900px;
   height: 100px;
   float: left;
 }
@@ -136,8 +136,8 @@ float: left;
 }
 
 #afbeeldingresolutie{
-width: 30%;
-float: right;
+width: 350px;
+float: left;
 margin: 20px;
 }
 
