@@ -22,16 +22,6 @@
     clear:both;
     }
 
-body {
-  background-color: #ffdfba; /*Dit is de achtergrondkleur voor alle pagina's, tenzij ik specefiek een andere kleur kies voor de pagina*/
-  background-image: linear-gradient(to bottom left, #b2c782,#f8e5d2, #f9f5f1); /* Hiermee laat ik de groene kleur overlopen naar de andere kant van het scherm naar beige. Ik heb 2 keer beige gedaan, omdat ik vond dat er teveel groen was, en er moest meer beige komen. (Ik heb dat dus express gedaan)*/
-  padding-bottom: 30px;
-}
-
-#body1 {
-  background-image: url("afbeeldingen/bloemen.jpeg"); /* Hiermee maak ik een afbeelding mijn achtergrond, alleen op body1*/
-  background-size: cover; /* Dit zorgt ervoor dat de afbeelding het hele scherm bedekt, en niet een deel omdat de afbeelding te klein is*/
-}
 
 ul { 
   list-style-type: none; /*Dit zorgt ervoor dat de lijst in het menu geen punten hebben ervoor*/
@@ -83,10 +73,7 @@ p {
 
 
 
-#tekstvector{
-  float: left;
-  width: 50%;
-}
+
 
 h1 {
   font-family: Georgia, serif; /* Ik heb een andere lettertype gekozen voor mijn tekst*/
@@ -104,41 +91,8 @@ h2{
   text-shadow: 1px 2px 4px red, 0 0 35px green, 0 0 5px orange;
 }
 
-#spel1, #spel2{
-  max-width: 50%;
-}
-
-#spel2 {
-float: right; /*Hierdoor komen de 2 spellen die ik elk een eigen id heb gegeven, aan de rechterkant van het scherm terecht.*/
-}
-
-.class1{
-font-size: 15px;
-margin: 20px;
-display: block;
-}
-
-.button {
-background-color: #ed4968;
-padding: 20px;
-text-align: center;
-list-style-type: none;
-margin: 20px;
-float: right;
-text-decoration: none;
-}
-
-.button:hover{
-background-color: #a7c268;
-}
 
 
-
-#afbeeldingbinairtellen{
-width: 40%;
-float: right;
-display: block;
-}
 
 
 
@@ -148,14 +102,3 @@ float: left;
 margin: 20px;
 }
 
-#afbeeldingbitmap{
-width: 40%;
-height: 240px;
-float:left;
-display: inline;
-}
-
-#afbeeldinggeluid{
-width: 40%;
-margin-left: 20px;
-}
