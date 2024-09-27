@@ -118,7 +118,8 @@ padding: 15px;
 margin-top: 20px;
 font-size: 13px;
 border-radius: 0px; /*Als ik deze niet gebruik, komen er ronde hoeken net als mijn paragrafen. Maar dat wou ik niet*/
-display: block;
+/*display: block;*/
+clear:both;
 }
 
 #afbeeldingbinairtellen{
