@@ -59,7 +59,7 @@ p {
 
 #tekstkleurmodellen{
   margin-left: 20px;
-  width: 100%;
+  width: 80%;
   height: 100px;
   float: left;
 }
@@ -132,7 +132,7 @@ display: block;
 #afbeeldingkleurmodellen{
 width: 47%;
 float: right;
-margin-bottom: 20px;
+/*margin-bottom: 20px;*/
 }
 
 #afbeeldingresolutie{
