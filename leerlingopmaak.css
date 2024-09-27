@@ -1,84 +1,152 @@
-/*body{ 
-    background: url(plaatje\ 3.jpg)
-  }
-  body{
-    background-repeat: no-repeat;
-    background-size:cover;
-  }*/
-  
-    ul {
-      list-style-type:none ; /*bolletjes weg*/
-      margin:0%;/*ruimte om de rand van het menu heen*/
-      padding: 0; /*ruimte tussen het begin van de balk en het eerste stukje tekst*/ 
-      overflow:hidden; /*verwijnt uit het scherm wanneer menu teveel opties heeft*/
-      background-color: white;
-    }
-    
-    li {
-      float: left; /*het menu is linksboven in de hoek*/ 
-    }
-    
-    li a {
-      display: block; /*Blokje in menu waar tekst in wordt weergegeven*/
-      color: rgb(51, 211, 184);
-      text-align: center; /*plek van tekst in het vierkante in het menu*/
-      padding: 18px 16px; /*de grootte van het blokje met de tekst erin*/
-      text-decoration:none; 
-    }
-    
-    li a:hover {
-      background-color: whitesmoke; /*achtergrond kleur wanneer je muis erover heen gaat*/
-    }
-  
-    h1{
-      border-style:ridge;
-      color: white;
-      text-align: center;
-    }
-  
-    h2{
-      border-style: double;
-      color: white;
-      text-align: center;
-    }
-  
-    p {
-      color: rgb(65, 49, 214);
-      text-align: center;
-      width: 70%;
-      margin:auto;
-    }
-  #tekstleft{
-    color: white;
-    text-align: center;
-  }
-  
-    head{
-      color: white;
-    }
-  
-    .footer {
-      background-color:white;
-      color: rgb(51, 211, 184)  ;
-      margin: 1%;
-      padding: 1%;
-      text-align: center;
-      font-size: 20px 
-   }
-  
-   /*img {
-    max-width: 100%;
-    height: auto;
-    text-align:center;
-   }*/
-   
+body {
+  background-color: #ffdfba; /*Dit is de achtergrondkleur voor alle pagina's, tenzij ik specefiek een andere kleur kies voor de pagina*/
+  background-image: linear-gradient(to bottom left, #b2c782,#f8e5d2, #f9f5f1); /* Hiermee laat ik de groene kleur overlopen naar de andere kant van het scherm naar beige. Ik heb 2 keer beige gedaan, omdat ik vond dat er teveel groen was, en er moest meer beige komen. (Ik heb dat dus express gedaan)*/
+  padding-bottom: 30px;
+}
 
-   #maxim1 {
-    position: relative;
-    width: 600px;
-    height: 200px;
-    left: 50%;
-   }
-   
-   
-    
+#body1 {
+  background-image: url("afbeeldingen/bloemen.jpeg"); /* Hiermee maak ik een afbeelding mijn achtergrond, alleen op body1*/
+  background-size: cover; /* Dit zorgt ervoor dat de afbeelding het hele scherm bedekt, en niet een deel omdat de afbeelding te klein is*/
+}
+
+ul { 
+  list-style-type: none; /*Dit zorgt ervoor dat de lijst in het menu geen punten hebben ervoor*/
+  margin: 0; /*Dit geeft aan hoeveel ruimte er is tussen de tekst en de zijkanten van het scherm*/
+  padding: 0; /*Dit geeft aan hoeveel ruimte er om de tekst heen zit*/
+  overflow: hidden;
+  background-color: #ed4968; /*Dit is de hoofdkleur van het menu, de achtergrond*/
+}
+
+li {
+  float: left; /*Hierdoor komt mijn tekst van mijn menu aan de linkerkant van het scherm*/
+}
+
+li a {
+  display: block;/*Dit zorgt dat er geen andere elementen naast mijn menu komt*/
+  color: cornsilk; /*Dit zorgt voor de kleur van mijn tekst die in mijn menu zit*/
+  text-align: center; /*Dit zorgt ervoor dat de tekst in het midden van de knop zit*/
+  padding: 14px 16px; /*Dit bepaald hoeveel ruimte er om de tekst zit, maar wel nog in het element*/
+  text-decoration: none; /*Dit bepaald hoe de tekst in het menu eruit ziet. Als ik dit weghaal, komt er een streep onder mijn tekst, dit vind ik niet mooi.*/
+}
+
+li a:hover {
+  background-color: #a7c268; /*als je op het menu klikt kan je zien welke is geselecteerd*/
+}
+
+li {
+  border-right:1px solid#bbb; /*dit zorg ervoor dat er in het menu, lijntjes zitten zodat het duidelijk is waar je op de andere pagina kan klikken om naar de volgende te gaan*/
+} 
+
+p {
+  border-radius: 15px; /* Dit rond de hoeken van mijn element af*/
+  background-color: #ed4968; /*Dit is de achtergrondkleur van mijn tekst*/
+  padding: 20px; /*Dit zorgt voor de rand om de tekst in het element, hoe hoger de px, hoe meer ruimte eromheen komt*/
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace; /* Dit zorgt voor een andere lettertype*/
+  color: cornsilk; /*Dit is de kleur van mijn tekst*/
+}
+
+#p1 {
+  width: 40%; /*Dit laat mijn eerste paragraaf maar 40% van het scherm bedekken*/
+  font-size: 16px; /* Dit zorgt voor de grootte van mijn tekst*/
+}
+
+#p2 {
+  width: 80%;
+  font-size: 16px; /* Dit zorgt voor de grootte van mijn tekst*/
+}
+
+
+#tekstkleurmodellen{
+  margin-left: 20px;
+  width: 60%;
+  float: right;
+}
+
+#tekstvector{
+  float: left;
+  width: 50%;
+}
+
+h1 {
+  font-family: Georgia, serif; /* Ik heb een andere lettertype gekozen voor mijn tekst*/
+  margin:40px; /*Dit is de ruimte die zit tussen de elementen en de tekst, hoe hoger de px, hoe groter de afstand*/
+  color: #f8f2ec;
+  font size: 40px;
+  text-shadow: 1px 2px 4px red, 0 0 35px green, 0 0 5px orange; /*Dit zorgt voor een schaduw om mijn h1 tekst 
+  (dus bijvoorbeeld 'over mij'), ik heb uitgeprobeerd met de kleuren en vond deze combinatie het beste met mijn pagina*/
+}
+
+h2{
+  font-family: Georgia, serif;
+  margin-left: 40px;
+  color: #f8f2ec;
+  text-shadow: 1px 2px 4px red, 0 0 35px green, 0 0 5px orange;
+}
+
+#spel1, #spel2{
+  max-width: 50%;
+}
+
+#spel2 {
+float: right; /*Hierdoor komen de 2 spellen die ik elk een eigen id heb gegeven, aan de rechterkant van het scherm terecht.*/
+}
+
+.class1{
+font-size: 15px;
+margin: 20px;
+display: block;
+}
+
+.button {
+background-color: #ed4968;
+padding: 20px;
+text-align: center;
+list-style-type: none;
+margin: 20px;
+float: right;
+text-decoration: none;
+}
+
+.button:hover{
+background-color: #a7c268;
+}
+
+.footer{
+background-color: #a7c268;
+padding: 15px;
+margin-top: 20px;
+font-size: 13px;
+border-radius: 0px; /*Als ik deze niet gebruik, komen er ronde hoeken net als mijn paragrafen. Maar dat wou ik niet*/
+display: block;
+}
+
+#afbeeldingbinairtellen{
+width: 40%;
+float: right;
+display: block;
+}
+
+#afbeeldingkleurmodellen{
+width: 47%;
+float: right;
+margin-bottom: 20px;
+}
+
+#afbeeldingresolutie{
+width: 30%;
+float: left;
+margin: 20px;
+}
+
+#afbeeldingbitmap{
+width: 40%;
+height: 240px;
+float:left;
+display: inline;
+}
+
+#afbeeldinggeluid{
+width: 40%;
+margin-left: 20px;
+}
