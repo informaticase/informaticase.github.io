@@ -1,3 +1,17 @@
+#tekstkleurmodellen{
+  margin-left: 20px;
+  width: 900px;
+  height: 100px;
+  float: left;
+}
+
+#afbeeldingkleurmodellen{
+  width: 350px;
+  float: left;
+  /*margin-bottom: 20px;*/
+  }
+
+
 body {
   background-color: #ffdfba; /*Dit is de achtergrondkleur voor alle pagina's, tenzij ik specefiek een andere kleur kies voor de pagina*/
   background-image: linear-gradient(to bottom left, #b2c782,#f8e5d2, #f9f5f1); /* Hiermee laat ik de groene kleur overlopen naar de andere kant van het scherm naar beige. Ik heb 2 keer beige gedaan, omdat ik vond dat er teveel groen was, en er moest meer beige komen. (Ik heb dat dus express gedaan)*/
@@ -57,12 +71,7 @@ p {
 }
 
 
-#tekstkleurmodellen{
-  margin-left: 20px;
-  width: 900px;
-  height: 100px;
-  float: left;
-}
+
 
 #tekstvector{
   float: left;
@@ -129,11 +138,7 @@ float: right;
 display: block;
 }
 
-#afbeeldingkleurmodellen{
-width: 350px;
-float: left;
-/*margin-bottom: 20px;*/
-}
+
 
 #afbeeldingresolutie{
 width: 350px;
