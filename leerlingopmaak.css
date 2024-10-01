@@ -39,6 +39,8 @@
 }
 .tweedelevel-menu > li:hover >ul { background: #CCCCCC; 
     display: inline;
+    background-color: red;
+    color: #f5f505;
 }
 
                                           /*LET OP DIE DISPLAY INLINE*/
