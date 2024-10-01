@@ -25,12 +25,9 @@ ul {
     border-right: 1px solid #bbb;
     
     /* Dit is een geneste stijlregel voor lijstitems binnen lijstitems. */
-    li {
-        /* Dezelfde stijl als hierboven toegepast op geneste lijstitems. */
-        float: left;
-        border-right: 1px solid #bbb;
+    
     }
-  }
+  
   
   /* Dit is een stijlregel voor het laatste lijstitem binnen de lijst. */
   li:last-child {
