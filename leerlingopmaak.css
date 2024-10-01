@@ -145,7 +145,7 @@ li a {
 }
 /*Laat zien wat er gebeurt  als je je muis over dit laat hoveren, zonder te klikken. (niet actief als dit al .active is. */
 li a:hover:not(.active) { 
-    background-color: #111;
+    background-color: #f5f10c;
 }
 /*dit gat over de hele website pagina */
 body {
