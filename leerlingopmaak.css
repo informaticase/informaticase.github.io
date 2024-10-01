@@ -95,6 +95,8 @@
 {
     /* On hover, display the next level's menu */
     display: inline;
+    background-color: red;
+    color: #f5f505;
 }
 
 
