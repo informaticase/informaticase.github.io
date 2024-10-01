@@ -1,6 +1,6 @@
 /*Dit zegt dat alle ongeordende lijsten standaart dit volgen  */
 
-.third-level-menu
+.derdelevel-menu
 {
     position: absolute;
     top: 0;
@@ -12,14 +12,14 @@
     display: none;
 }
 
-.third-level-menu > li
+.derdelevel-menu > li
 {
     height: 30px;
     background: #999999;
 }
-.third-level-menu > li:hover { background: #CCCCCC; }
+.derdelevel-menu > li:hover { background: #CCCCCC; }
 
-.second-level-menu
+.tweedelevel-menu
 {
     position: absolute;
     top: 30px;
@@ -31,26 +31,26 @@
     display: none;
 }
 
-.second-level-menu > li
+.tweedelevel-menu > li
 {
     position: relative;
     height: 30px;
     background: #999999;
 }
-.second-level-menu > li:hover >ul { background: #CCCCCC; 
+.tweedelevel-menu > li:hover >ul { background: #CCCCCC; 
     display: inline;
 }
 
                                           /*LET OP DIE DISPLAY INLINE*/
 
-.top-level-menu
+.bovenstelevel-menu
 {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.top-level-menu > li
+.bovenstelevel-menu > li
 {
     position: relative;
     float: left;
@@ -58,12 +58,12 @@
     width: 150px;
     background: #999999;
 }
-.top-level-menu > li:hover { 
+.bovenstelevel-menu > li:hover { 
     background: #CCCCCC;
     display: inline;
  }
 
-.top-level-menu li:hover > ul
+.bovenstelevel-menu li:hover > ul
 {
     /* On hover, display the next level's menu */
     display: inline;
@@ -73,7 +73,7 @@
 
 /* Menu Link Styles */
 
-.top-level-menu a /* Apply to all links inside the multi-level menu */
+.bovenstelevel-menu a /* Apply to all links inside the multi-level menu */
 {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: #FFFFFF;
@@ -84,9 +84,9 @@
     display: block;
     line-height: 30px;
 }
-.top-level-menu a:hover { color: #000000; }
+.bovenstelevel-menu a:hover { color: #000000; }
 
-.top-level-menu li:hover > ul
+.bovenstelevel-menu li:hover > ul
 {
     /* On hover, display the next level's menu */
     display: inline;
