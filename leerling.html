@@ -1,54 +1,70 @@
-<!DOCTYPE html> <!--Dit is de hoofdpagina van mijn website-->
-<html> <!--Dit is het html-element-->
-    <head> 
-        <title>Homepage</title> <!--De titel die wordt weergegeven in de browser-tab-->
-        <link rel="stylesheet" type="text/css" href="leerlingopmaak.css"> <!--Koppeling naar CSS-->
-        <meta charset="utf-8"> <!--De karaktercodering van het document-->
-    </head>
-    <body> 
-
-        <br> <!--Voegt een enkele regelafstand in-->
-        <ul> <!--Menu-->
-            <li><a href="index.html">Homepage </a></li> <!--Eerste lijstitem met link naar homepage en een afbeelding-->
-            <li><a href="binairstelsel.html">Binaire stelsel </a></li> <!--Tweede lijstitem met link naar pagina het binaire stelsel en een afbeelding-->
-            <li><a href="kleurmodellen.html">kleurmodellen </a></li> <!--Derde lijstitem met link naar pagina kleurmodellen en een afbeelding-->
-            <li><a href="algemeneinformatie.html">Algemene info </a></li> <!--Vierde lijstitem met link naar pagina algemeneinformatie en een afbeelding-->
-            <li><a href="bestandformaten.html">Bestandformaten </a></li> <!--Vijfde lijstitem met link naar pagina bestandformaten en een afbeelding-->
-            <li><a href="compressie.html">Compressie </a></li> <!--Zesde lijstitem met een link naar pagina compressie en een afbeelding-->
-            <li>
-                <a href="#">Drielagenmodel</a>
-                <ul class="second-level-menu">
-                    <li><a href="fysiekelaag.html">Fysiekelaag</a>
-                        <ul class="third-level-menu">
-                            <li><a href=#>A</a></li>
-                            <li><a href=#>B</a></li>
-                            <li><a href=#>C</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
-                    <li><a href="logischelaag.html">Logischelaag</a></li>
-                </ul>
-            </li>
-        </ul>
-         
-        <h1>Homepage</h1> <!--Hoofdkop met de tekst "Homepage"-->
-
-        <p> <!--Een alinea (paragraaf) met tekst-->
-            Welkom bij de homepagina van mijn website. Mijn naam is Oktay Başaran en dit is mijn eerste website die ik heb gemaakt.
-            Deze website gaat over het vak informatica en bevat onderdelen als het binaire stelsel en kleurmodellen.
-            Dat klopt, ik heb deze website gemaakt voor het schoolvak informatica. Informatica is een studie en wetenschap die zich bezighoudt
-            met alle onderdelen van computersystemen en netwerken. Benieuwd wat onderdelen als het binaire stelsel en kleurmodellen nou precies inhouden?
-            Dan ben je op de juiste pagina beland!</p>  
-
-        <div class="video-link"> <!--Een linkje boven de afbeelding die naar mijn eigen uitlegvideo over mijn website gaat (op youtube), class=linkjes zorgt er in het css voor dat het menu en linkjes van elkaar worden onderscheiden-->
-            <a class="linkjes" href="https://www.youtube.com/watch?v=ggZsNDRibTc">Uitlegvideo over mijn website</a>
-        </div> 
-        
-        <img src="afbeeldingen/homepage.jpg" width="720" height="480"> <!--Een afbeelding met de afmetingen-->
-
-        <footer> <!--Een footer-sectie voor copyrightinformatie-->
-            &copy; 2023 Oktay Başaran - Alle rechten voorbehouden.
-        </footer>
+<!DOCTYPE html> <!--Dit is de homepage van mijn site-->
+<html> <!--Dit is een html-element-->
+  <head>
+    <title>Help</title> <!--Titel in de balk bovenaan-->
+      <link rel="stylesheet" type="text/css" href="/opmaak.css">  <!--Dit is de link naar mijn css bestand--> 
       
-    </body>
-</html>
+    <meta charset="utf-8"> <!--welke versie het is-->
+  </head>
+  <body>
+
+    <ul><!--Dit is een ongeordende lijst. In dit geval wordt dit de navigatiebalk.-->
+      <li><a href="/index.html" class="active">home</a></li> <!--link terug naar de homepage met kleur-->
+      <li><a href="/html/binairstelsel.html">binair stelsel</a></li> <!--link naar de 2e pagina-->
+      <li><a href="/html/kleurmodellen.html">kleurmodellen</a></li> <!--link naar de 3e pagina-->
+      <li><a href="/html/compressietechnieken.html">compressietechnieken</a></li> <!--link naar de 4e pagina-->
+      <li><a href="/html/werking_computer.html" >Werking computer</a></li> <!--link naar de 5e pagina-->
+       <li><a href="/html/fysieke_laag=processor.html" >processor</a></li>
+      <li> <a href="/html/dropdown.html">dropdown</a>
+        <ul class="second-level-menu">
+         <li><a href="#">Optie 1</a></li>
+            <li><a href="#">Optie 2</a></li>
+            <li><a href="#">Optie 3</a>
+             <ul class="third-level-menu">
+                <li><a href="#">Optie 3.1</a></li>
+                <li><a href="#">Optie 3.2</a></li>
+                <li><a href="#">Optie 3.3</a></li>
+                <li><a href="#">Optie 3.4</a></li>
+             </ul>
+            </li>
+         <li><a href="#">Optie 4</a></li>
+        </ul>
+    </li>
+    </ul><!--dit is het eindelement van een ongeordende lijst-->
+    <div class="intro-section"><!--Een div class zordt ervoor dat het deel waar dit over geldt een specifiek soort opmaak krijgt. Dit staat in de css-->
+      <h1>Welkom op mijn site!</h1><!--Dit geeft aan dat het een titel is van een bepaalde grootte-->
+      <p>Hoi, mijn naam is Anneleen en ik zit in klas A6 op het Vlietland college. Als je meer over informatica wil weten, dan moet je niet bij mij zijn. </p><!--Dit is een klein paragraafje over mezelf-->
+    </div>   
+    <br><!--br geeft aan dat er een line-break is. De regel stopt dus hier.-->
+    <div class="column">
+        <div class="card">
+       <h3>Project Website</h3><!--Dit geeft wederom aan hoe groot het kopje hier is.-->
+        <p>Dit is mijn aller eerste project voor informatica. </p>
+        </div>
+       <br>
+        <br>
+
+        <div class="card">
+      <h3>Mijn vaardigheden:</h3> 
+      <ol> <!--Dit is een geordende lijst. De punten krijgen dus nummers.-->
+        <li>HTML</li><br>
+        <li>CSS</li><br>
+      </ol>
+      </div>
+    </div>
+      <div class="column">
+        <video width="400px" height="auto" controls="controls"> <!--Filmpje instructies-->
+          <source src="filmpje.mp4" type="video/mp4" /> <!--Link naar filmpje-->
+        </video>
+      </div>
+    
+    <br>
+  </body><!--Dit is het eind van het body-element. Het einde van de website pagina dus.-->
+</html><!--Dit is het eind van het HTML-element.-->
+
+
+
+<!--De reden dat er mappen zijn, maar dat er niets in staat, is omdat toen ik dat deed mijn hele website weg ging. 
+  Het is momenteel te laat in de avond om hier nu iets aan te doen.
+Ik ben er moe van dat we dit soort dingen niet te leren/horen krijgen in de les, maar dit alles achteraf ergens moeten lezen.
+Persoonlijk vindt ik RTFM niet een goed excuus om geen echte les meer te geven.... -->

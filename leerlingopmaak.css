@@ -1,3 +1,5 @@
+/*Dit zegt dat alle ongeordende lijsten standaart dit volgen  */
+
 .third-level-menu
 {
     position: absolute;
@@ -13,7 +15,6 @@
 .third-level-menu > li
 {
     height: 30px;
-    width: 80px;
     background: #999999;
 }
 .third-level-menu > li:hover { background: #CCCCCC; }
@@ -36,7 +37,11 @@
     height: 30px;
     background: #999999;
 }
-.second-level-menu > li:hover { background: #CCCCCC; }
+.second-level-menu > li:hover >ul { background: #CCCCCC; 
+    display: inline;
+}
+
+                                          /*LET OP DIE DISPLAY INLINE*/
 
 .top-level-menu
 {
@@ -53,12 +58,16 @@
     width: 150px;
     background: #999999;
 }
-.top-level-menu > li:hover { background: #CCCCCC; }
+.top-level-menu > li:hover { 
+    background: #CCCCCC;
+    display: inline;
+ }
 
 .top-level-menu li:hover > ul
 {
     /* On hover, display the next level's menu */
     display: inline;
+    float: under;
 }
 
 
@@ -76,3 +85,89 @@
     line-height: 30px;
 }
 .top-level-menu a:hover { color: #000000; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+ul {
+    list-style-type: none; /*Zegt dat er niets voor dit deel staat van de lijst. Dus geen bolletje of sterretje*/
+    margin: 0; /*Hoe groot de ruimte is buiten de randen van dit element */
+    border: 2; /*Hoe dik de rand is */
+    padding: 0; /*Hoe groot de ruimte is tussen de inhoud en de rand */
+    overflow: hidden; /*Als de tekst uit het blokje gaat doordat er te veel van is, zal het gewoon niet zichtbaar zijn. */
+    background-color: rgb(58, 58, 58); /*Achtergrondkleur in het blokje */
+}
+/*Over de punten in een lijst. */
+ li { 
+  float: left; /*Alle punten zullen op een rijtje allemaal aan de linkerkant staan.(1234) */
+}
+/*Details over div class. Alles wat met een "." begint is een div class. De namen heb ik zelf gekozen. */
+    .intro-section{
+        text-align: center;  /*De tekst staat in het midden van het beeld. */
+        background-color: rgb(83, 175, 83);  /*De achtergrondkleur is hier aangegeven met 3 cijfers. Dit zijn de waardes van hoeveel groen, blauw en rood de lampjes produceren voor deze kleur. */
+        color: #fff; 
+        /*Tekst kleur */
+        padding: 20px;
+    }
+    .column {
+        float: left;  
+        font-size: 18px; 
+        /*lettergrootte */
+        width: 45%; 
+        /*Hoeveel procent van het beelscherm het del opneemt */
+        padding: 15px;
+    }
+    .inleiding{
+        text-align: center;
+        color: #111;
+        padding: 20px;
+        font-size: 30px;
+    }
+ /*Dit is wanneer een deel van een lijst actief aan staat. */
+li a.active { 
+    background-image: linear-gradient(60deg, darkgreen, lightgreen); 
+    /*Het actieve blokje heeft nu 2 kleuren die diagonaal vervagen. */
+    color: white
+  }
+  /*Dit zegt hoe de punten van de lijst eruit zien */
+li a {
+    display: block; 
+    /*Het is in de vorm van een blokje */
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    /*Met text-decoration kan je een lijn onder/boven/door/om je tekst lopen */
+}
+/*Laat zien wat er gebeurt  als je je muis over dit laat hoveren, zonder te klikken. (niet actief als dit al .active is. */
+li a:hover:not(.active) { 
+    background-color: #111;
+}
+/*dit gat over de hele website pagina */
+body {
+    background-color: #77f077 ;
+}
+/*Dit gaat over de imbedded link. */
+iframe {
+    align-content: right; 
+    /*Het float aan de rechter kant. */
+} 
+.card{
+    background-color: white ;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; 
+    /*Laat zien hoeveel pixels er tussen dit element en het element erboven zitten */
+    border: #111;
+    border-style: solid; 
+    /*De omleining rond dit blokje is een solide lijn. */
+    color: #111;
+}
+video{ /*Dit gaat over de video*/
+    float: right;
+
+}
