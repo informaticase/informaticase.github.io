@@ -1,79 +1,51 @@
-
-  
-  .third-level-menu
-  {
-      position: absolute;
-      top: 0;
-      right: -150px;
-      width: 150px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: none;
+body {
+    background-color: lightblue;
   }
   
-  .third-level-menu > li
-  {
-      height: 30px;
-      background: #999999;
+  h1 {
+    color: navy;
+    margin-left: 20px;
   }
-  .third-level-menu > li:hover { background: #CCCCCC; }
-  
-  .second-level-menu
-  {
-      position: absolute;
-      top: 30px;
-      left: 0;
-      width: 150px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: none;
+  ul {
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
   }
   
-  .second-level-menu > li
-  {
-      position: relative;
-      height: 30px;
-      background: #999999;
-  }
-  .second-level-menu > li:hover { background: #CCCCCC; }
-  
-  .top-level-menu
-  {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+  li {
+    float: left;
   }
   
-  .top-level-menu > li
-  {
-      position: relative;
-      float: left;
-      height: 30px;
-      width: 150px;
-      background: #999999;
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
   }
-  .top-level-menu > li:hover { background: #CCCCCC; }
-  
-  .top-level-menu li:hover > ul
-  {
-      /* On hover, display the next level's menu */
-      display: inline;
+  .Bonanza{
+    width: 200px;
+  } <!--code voor binarybonanza link ahcter het plaatje-->
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #090084;
   }
   
-  
-  /* Menu Link Styles */
-  
-  .top-level-menu a /* Apply to all links inside the multi-level menu */
-  {
-      font: bold 14px Arial, Helvetica, sans-serif;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 0 0 0 10px;
-  
-      /* Make the link cover the entire list item-container */
-      display: block;
-      line-height: 30px;
+  li {
+    float: left;
   }
-  .top-level-menu a:hover { color: #000000; }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  p {
+    width: 70%;
+  }
