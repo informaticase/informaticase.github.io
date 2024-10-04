@@ -6,24 +6,14 @@ body {
     color: navy;
     margin-left: 20px;
   }
-  ul {
-    overflow: hidden;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: blue;
-  }
   
-  li {
-    float: left;
-  }
   
-  a {
+  /*a {
     display: block;
     padding: 8px;
     background-color: #dddddd;
-  }
+  }*/
+  
   .Bonanza{
     width: 200px;
   } <!--code voor binarybonanza link ahcter het plaatje-->
