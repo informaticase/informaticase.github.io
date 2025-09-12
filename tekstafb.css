@@ -2,21 +2,21 @@ body{}
 
 #afbLeft {
     vertical-align: middle;
-    width: 350px;
-    height: 500px;
+    width: 33%;
+    height: 33%;
 
 }
 
 #afbRight {
     float: right;
-    width: 350px;
-    height: 500px;
+    width: 33%;
+    height: 33%;
 }
 
 #afbCenter {
     vertical-align: middle;
-    width: 350px;
-    height: 500px;
+    width: 33%;
+    height: 33%;
     
 }
 .column {
