@@ -37,25 +37,25 @@ ul li a:hover {
 
 #afbRight {
     float: right;
-    width: 33%;
-    height: 33%;
+    width: 20%;
+    height: 20%;
 }
 
 #afbCenter {
     vertical-align: middle;
-    width: 33%;
-    height: 33%;
+    width: 20%;
+    height: 20%;
     
 }
 
 /*mijn tekst geef ik een rand, en bepaal breedte en hoogte.
 Ik laat het links tegen het vorige element aandrijven*/
 #tekstmid {
-    border-width: 1;
-    border-color: blue;
-    width: 33%;
-    height: 100px;
-    float: left;
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
 
 
