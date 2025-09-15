@@ -47,6 +47,18 @@ ul li a:hover {
     height: 33%;
     
 }
+
+/*mijn tekst geef ik een rand, en bepaal breedte en hoogte.
+Ik laat het links tegen het vorige element aandrijven*/
+#tekstmid {
+    border-width: 1;
+    border-color: blue;
+    width: 33%;
+    height: 100px;
+    float: left;
+}
+
+
 .column {
   float: left;
   width: 20%;
