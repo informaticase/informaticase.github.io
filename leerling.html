@@ -1,62 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Belangrijke Concepten in Grafische Weergave</title>
-    <link rel="stylesheet" type="text/css" href="leerlingopmaak.css">
-    <style>
-        .kleur-box {
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-            display: inline-block;
-        }
-    </style>
+    <title>Compressie</title>
+<link rel="stylesheet" href="leerlingopmaak.css">
 </head>
 <body>
-        <ul class="top-level-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">binairstelsel</a></li>
-            <li><a href="bits-en-bytes.html">bits en bytes</a></li>
-            <li><a href="kleurmodellen.html">kleurmodellen</a></li>
-            <li><a href="compresietechnieken.html">compressietechnieken</a></li>
-            <li><a href="uitlegfilmpje.html">uitlegfilmpje</a></li>
-            <li>
-                <a href="3lagenmodel.html">3lagenmodel</a>
-                <!-- Het dropdownmenu binnen de <li> tag -->
-                <ul class="second-level-menu">
-                    <li><a href="fysiekelaag.html">fysieke laag</a></li>
-                    <li><a href="randapparatuur.html">randapparatuur</a></li>
-                    <li><a href="toepassingslaag.html">toepassings laag</a></li>
-                    <li><a href="logischelaag.html">logische laag</a></li>
-                </ul>
-            </li>
-        </ul>
+<ul>
+    <li> <a href="index.html">Home</a></li>
+    <li> <a href="Binairstelsel.html">Binairestelsel</a></li> 
+    <li> <a href="Kleurmodellen.html">Kleurmodellen</a></li>   
+    <li> <a href="Invoer - verwerking - uitvoer.html"> Invoer-verwerking-uitvoer</a></li> 
+    <li> <a class="active" href="Compressie.html"> Compressie</a></li>
+</ul>
 
-    <h1>Belangrijke Concepten in Grafische Weergave</h1>
 
-    <h2>Kleurmodellen</h2>
-    <p>Kleurmodellen zijn systemen om kleuren te beschrijven en representeren. Twee belangrijke kleurmodellen zijn RGB en CMYK.</p>
+<div class="compressie">
+<h1>Compressie</h1>
+<h3>Inleiding</h3>
+<p>
+    Afbeeldingen en geluidsbestanden nemen veel opslagruimte in. Hierdoor raakt een harde schijf sneller vol. 
+    Deze bestanden hebben ook meer tijd nodig om te downloaden. Als je zo’n bestand downloadt op je telefoon met een databundel is die databundel snel leeg. 
+    Daarom is er bestandscompressie. Dit zorgt ervoor dat een bestandsgrootte van bijvoorbeeld een video wordt verkleind. 
+    Hierdoor raakt je opslag minder snel vol en kunnen bestanden sneller worden gedownload via internet. 
+</p>
+<h3>Compressie bij afbeeldingen en video</h3>
+<p>
+    Er zijn verschillende soorten compressies. Bij lossy compression wordt informatie uit een bestand aangepast en verwijderd, hierdoor wordt die kleiner. 
+    Bijvoorbeeld bij een foto van een hond die bestaat uit veel verschillende soorten wit kleuren, maar die verschillen kunnen wij als mensen niet echt zien. 
+    Dus als je de foto dan uit minder verschillende kleuren wit laat bestaan, wordt het bestand van de foto kleiner. Hierdoor wordt de kwaliteit van de foto minder. 
+</p>
+<p>
+    Hieronder zie je de 2 foto’s van de hond, waarbij de linker foto het origineel is en bij de rechter foto lossy compression is toegepast. 
+    Je ziet bijna tot eigenlijk geen verschil, maar het bestand is wel kleiner geworden. 
+</p>
+<img class="Lossy-compression" src="Plaatjes/lossy compression plaatje.png" alt="Lossy compression">
+<p>
+    Een methode die vaak bij lossy compression wordt gebruikt is JPEG, wat je vaak tegenkomt als JPG. 
+    Als je een foto maakt doet je telefoon uit zichzelf lossy compression op die foto, zodat het een kleiner bestand wordt.
+    Hij slaat het dan op als een .jpg bestand.
+</p>
+<p>
+    Ook bestaat er lossless compression. Bij deze compressie verandert de kwaliteit niet. 
+    Er wordt niks van het bestand verwijderd, maar het wordt op een praktische manier opgeslagen. 
+    Het wordt op deze manier gedaan: als je een afbeelding hebt met bijvoorbeeld 5 pixels naast elkaar die allemaal een waarde van 52 hebben, dit wordt meestal zo (52, 52, 52, 52, 52) opgeslagen. 
+    Met lossless compression wordt dit als (5, 52) opgeslagen. 
+</p>
+<img class="Lossless-compression" src="Plaatjes/lossless compression plaatje.png" alt="Lossless compression">
+<p>
+    Een bestand waar lossless compression bij wordt toegepast kan altijd weer worden teruggezet naar het origineel. 
+    Bij lossy compression is dit niet mogelijk, omdat er informatie wordt veranderd of verwijderd. 
+</p>
+<p>
+    Is het je weleens opgevallen dat als je een foto met whatsapp verstuurt vanaf je telefoon, dat dan de ontvanger een foto krijgt van minder kwaliteit? 
+    Dan heeft whatsapp er lossy compression op toegepast om het bestand kleiner te maken, zodat deze makkelijk verstuurd kon worden. Er wordt niet gebruikgemaakt van lossless compression, omdat met lossy compression je kleinere bestanden krijgt. 
+</p>
 
-    <div class="kleur-box" style="background-color: rgb(255, 0, 0);"></div>
-    <div class="kleur-box" style="background-color: rgb(0, 255, 0);"></div>
-    <div class="kleur-box" style="background-color: rgb(0, 0, 255);"></div>
+<img class="Plaatje-geluid" src="Plaatjes/Compressie bij geluid.png" alt="Plaatje geluid">
+<h3>Compressie bij geluidsfragmenten</h3>
+<p>
+    Bij geluidsfragmenten wordt ook compressie toegepast. 1 uur aan muziek kan al snel oplopen tot 700 MB, als je dit gaat luisteren met een databundel is deze snel leeg. 
+    Bij muziek is er ook een lossy compression methode dat MP3 heet. Bij deze methode worden ook dingen aan de muziek veranderd of verwijderd zonder dat wij dat horen. 
+    Mensen kunnen tonen tot ongeveer 20 kHz horen. Wat ook weer erg per persoon kan verschillen. Met de MP3 methode worden tonen hoger dan 16 kHz weggelaten, als er ander geluid op hetzelfde moment is. 
+    Bij kwaliteit van muziek is sample rate belangrijk, ook met hoeveel bits dit wordt opgeslagen is belangrijk. Deze 2 samen vormen de bitrate van muziek. Dit wordt geschreven als kilobits per seconden, afgekort: kbps. 
+</p>
+<p>
+De bitrate van professionele muziek bestaat uit 1.411,2 kbps, als dit wordt veranderd tot 256 kbps, hoor je als mens bijna geen verschil. 
+Maar wanneer je de bitrate verandert naar 128 kbps zou je wat vervorming van de klanken kunnen horen. MP3 bestanden met zo’n bitrate zijn 11 keer kleiner dan het origineel. 
+Dus 1 minuut muziek kost ongeveer 1 MB aan opslagruimte. Hierdoor kan je veel meer muziek opslaan zonder dat je opslagruimte snel vol raakt.  Ook kan je veel makkelijker streamen, want 1 uur streamen is nu nog ongeveer maar 60 MB aan data. 
+</p>
+</div>
 
-    <h3>RGB Kleurmodel</h3>
-    <p>Het RGB-model gebruikt rood, groen en blauw licht om kleuren te maken. Voorbeeldkleuren zijn rood, groen en blauw.</p>
+<br>
+<br>
+<br>
 
-    <h3>CMYK Kleurmodel</h3>
-    <p>CMYK gebruikt cyaan, magenta, geel en zwart voor drukwerk. Belangrijk voor kleurprecisie en drukwerk.</p>
+<div class="compressie">
+<h3>Bitmapafbeeldingen en vectoren</h3>
+<p>
+    Pixels in een afbeelding hebben allemaal een bepaalde kleur. Hoe meer pixels een afbeelding heeft, des te scherper die wordt. 
+    Een plaatje dat uit pixels bestaat heet een bitmapafbeelding. Dit heeft tegelijkertijd 2 voordelen maar ook dezelfde nadelen. 
+            1. Een bitmapafbeelding kost veel opslagruimte
+            2. Als je een bitmap afbeelding inzoomt krijg je de losse pixels te zien. Daardoor is je plaatje niet meer scherp. 
+Als je een hele grote afbeelding wilt maken die ook nog eens scherp is. Deze afbeelding heeft dan heel wat pixels nodig, waardoor het veel opslagruimte zal innemen. 
+Daarom is er ook een andere manier om een afbeelding digitaal te maken. Dat is namelijk de manier dat je niet de waarden van de pixels op slaat, maar de vormen waaruit de afbeelding bestaat. 
+Zo’n afbeelding heet een vectorafbeelding.
+Een van de voordelen van een vectorafbeelding is dat je makkelijk dingen kan veranderen. Bijvoorbeeld als je een plaatje vergroot of verkleind wordt alleen de opgeslagen waarden van de grootte aangepast. 
+Bij vectorafbeeldingen wordt door aanpassingen de afbeelding niet onscherp, wat wel bij bitmapafbeeldingen gebeurt.
+Er is ook een nadeel bij een vectorafbeelding: je kunt alleen maar vormen vastleggen. Bij een digitale foto kan je geen vormen vastleggen, omdat die alleen maar uit kleuren bestaat. 
+Dan kan je hem dus niet als vector opslaan.
+</p>
+<img class="Bitmapafbeeldingen" src="Plaatjes/Bitmap en vector.png" alt="Bitmapafbeeldingen">
 
-    <h2>Pixels en Resolutie</h2>
-    <p>Pixels zijn de kleinste eenheden van een digitale afbeelding. Resolutie meet het aantal pixels in een afbeelding.</p>
+<h3>Geluidsfragmenten</h3>
+<p>
+    Geluid bestaat uit trillingen in de lucht. Speakers van bijvoorbeeld een computer kunnen geluid afspelen. Maar hoe worden deze trillingen omgezet naar een patroon van nullen en enen, dus hoe wordt dit op je computer opgeslagen? 
+    Dat ga ik je in dit stukje uitleggen.
+    Om een geluid op te nemen kan je een microfoon gebruiken. Dit zet trillingen in de lucht om in een elektrisch signaal. 
+    De computer zet dit dan weer om in digitale waarden. Dit noem je samplen. Tijdens dit proces wordt bijvoorbeeld 1 keer per seconde gemeten wat de sterkte van het geluid is. 
+    Dit wordt dan in een grafiek weergegeven, zo’n grafiek kan je hieronder zien.
+</p>
+<p>(plaatje grafiek)</p>
+<p>
+    Op de verticale as wordt de sterkte van het geluid weergegeven en op de horizontale as de tijd. 
+    Alle punten in de grafiek zijn samples en die worden binair opgeslagen. Dit kan je ook weer in een tabel neerzetten.
+</p>
+<p>(plaatje tabel)</p>
+<p>Als je dit geluid gaat afspelen worden de waarden die je hebt gemeten omgezet in een elektrisch signaal dat is opgebouwd uit de gemeten waarden. 
+    Hoe meer samples je maakt, des te preciezer het geluid op het origineel lijkt.
+</p>
+<p>
+    De sample rate is het aantal samples per seconde. Bijna alle muziek is opgenomen met een sample rate van 44.100 Hz. 
+    De muziek wordt dan dus 44.100 keer per seconde gemeten.
+</p>
+</div>
 
-    <h3>Kleurinformatie</h3>
-    <p>Elke pixel draagt kleurinformatie. In een RGB-kleursysteem bestaat een pixel uit rood, groen en blauw.</p>
-
-    <h3>Resolutie</h3>
-    <p>Resolutie wordt uitgedrukt als het aantal pixels op de horizontale en verticale assen (bijv. 1920x1080).</p>
-
-    <h3>Pixelgrootte en Schermgrootte</h3>
-    <p>De grootte van een pixel kan variëren, en schermgrootte wordt bepaald door pixelaantallen en fysieke afmetingen.</p>
+<footer>Nanne Vleeskens</footer>
 </body>
 </html>

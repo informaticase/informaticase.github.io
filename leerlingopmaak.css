@@ -1,58 +1,84 @@
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+body{
+    background-color: rgb(192, 46, 97); /* achtergrondkleur */
+    color: rgb(255, 255, 255); /* letterkleur */
+}
+ul{
+    list-style-type: none; /* geen puntjes voor het menu */
+    margin: 0; /* haalt ruimte tussen de andere elementen weg */
+    padding: 0; /* haalt ruimte binnen het menu weg */
+    overflow: hidden; /* zorgt dat het binnen het venster blijft */
+    background-color: pink; 
+}
+ul li{
+    float: left; /* zorgt voor horizontaal menu aan de linker kant */
+}
+ul li a{
+    display: block; /* maakt het vakje waar de tekst in staat een blok */
+    color: white;
+    text-align: center; /* tekst komt in het midden van het blok */
+    padding: 14px 16px; /* creërt ruimte tussen de inhoud en de rand van het element */
+    text-decoration: none; /* verwijderd standaard onderstreeping van de link */
+}
+ul li a:hover{ /* als je met je muis over het menu gaat krijgt die een andere kleur namelijk hotpink */
+    background-color: hotpink;
+}
+ul li a.active{ /* op de pagina waar je bent heeft het het blokje van de pagina in het menu een andere kleur namelijk hotpink */
+    background-color: hotpink;
 }
 
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+p.Bits { /* breedte van de tekst bits */
+    width: 50%;
 }
 
-.top-level-menu > li
-{
-    position: relative;
+img.CMY-kleurmodel { /* groote plaatje CMY kleurmodel */
+    width: 25%;
+}
+
+img.Binaireplaatje { /* bepaalt dat me plaatje aan de rechter kant is en 30% van de rechterkant is */
+    float: right;
+    margin-right: 30%;
+}
+
+img.RGB-kleurmodel { /* bepaalt grootte van het plaatje RGB kleurmodel */
+    width: 25%;
+}
+
+img.Tabel-binaire-stelsel{ /* bepaalt grote van mijn plaatje en dat die midden op de pagina zit*/
+    width: 50%;
     float: left;
-    height: 30px;
-    width: 150px;
-    background: #999999;
-}
-.top-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu li:hover > ul
-{
-    /* On hover, display the next level's menu */
-    display: inline;
 }
 
 
-/* Menu Link Styles */
+img.Plaatje-geluid { /* Zet het plaatje geluid aan de rechter kant en bepaalt de grote. Het margin bepaalt hoe ver die van die kanten af is*/
+    float: right;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 50%;
+}
 
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-
-    /* Make the link cover the entire list item-container */
+img.Lossless-compression { /* bepaalt grote van plaatje lossless compression en dat die in het midden van de pagina komt*/
+    width: 50%;
     display: block;
-    line-height: 30px;
+    margin: auto;
 }
-.top-level-menu a:hover { color: #000000; }
+
+p.Home { /* bepaalt grote van de tekst en zorgt dat er een border omheen staat*/
+    width: 65%;
+    border-style: solid;
+    padding: 20px;
+    margin: 20px;
+}
+
+.compressie {
+    background-color: white;
+    width: 60%;
+    padding: 50px;
+    display: block;
+    margin: 50px auto 0 auto;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+img.ASCII-tabel {
+    width: 25;
+}
