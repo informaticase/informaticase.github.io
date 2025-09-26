@@ -82,3 +82,7 @@ p.Home { /* bepaalt grote van de tekst en zorgt dat er een border omheen staat*/
 img.ASCII-tabel {
     width: 25;
 }
+
+footer {
+    position: fixed;
+}
