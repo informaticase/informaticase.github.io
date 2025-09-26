@@ -1,6 +1,6 @@
 body{
     background-color: rgb(192, 46, 97); /* achtergrondkleur */
-    color: rgb(255, 255, 255); /* letterkleur */
+    color: rgb(34, 33, 33); /* letterkleur */
 }
 ul{
     list-style-type: none; /* geen puntjes voor het menu */
